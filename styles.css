@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1500px;
+    height: 100vh;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;   /* overflow is clipped, rest of the content is invisible */
+}
+
+.left-panel {
+    width: 30%;
+    padding: 20px;
+    box-sizing: border-box;     /* padding and border are included in total width and height of box */
+    background-color: #fafafa;
+    border-right: 1px solid #ddd;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;    /* wraps content onto next line when screen size reduces instead of shrinking */
+    flex-direction: row;
+    align-content: center;
+}
+
+.navbar img {
+    height: 30px;
+    width: 30px;
+    padding: 13px 10px 0px 3px;
+}
+
+.right-panel {
+    width: 100%;
+    height: 100%;
+}
+
+.address-section, .browse-section {
+    margin-bottom: 20px;
+}
+
+.address-section input, .browse-section input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);   /* horizontal offset, vertical offset, blur radius, colour */
+    transition: border-color 0.3s, box-shadow 0.3s;   /* smoothly transition any changes to color, shadow over 0.3 seconds */
+}
+
+.address-section input:focus, .browse-section input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.geocode-button, .search-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2980b9;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.geocode-button:hover, .search-button:hover {
+    background-color: #236b97;
+}
+
+.search-results {
+    max-height: 500px;
+    overflow-y: auto;   /* Default value of overflow - similar to scroll */
+}
+
+.search-bar input, button {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.result {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.8em;
+    height: 100%;
+}
+
+.result img {
+    border-radius: 10px;
+    margin-left: 15px;
+    order: 2;
+    height: 50px;
+    width: 50px;
+    object-fit: cover;  /* image keeps its aspect ratio and fills dimension, image is clipped to fit */
+}
+
+.result-content {
+    display: flex;
+    flex-direction: column;
+    order: 1;
+}
+
+.result strong {
+    font-size: 1.1em;
+    margin-bottom: 2px;
+}
+
+.result .rating {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.result .rating span {
+    margin-left: 5px;
+}
+
+.star {
+    color: gold;
+    margin-right: 5px;
+}

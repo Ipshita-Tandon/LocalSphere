@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalSphere</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <div class="navbar">
+                <img src="location.png" alt="icon">
+                <h2>LocalSphere</h2>
+            </div>
+            <div class="address-section">
+                <h3>Find Your Location</h3>
+                <input type="text" id="address" class="address-input" placeholder="Enter Address">
+                <button id="geocode-button" class="geocode-button">Go to Location</button>
+            </div>
+            
+            <div class="browse-section">
+                <h3>Explore Nearby</h3>
+                <div class="search-bar">
+                    <input type="text" id="place-type" class="place-type" placeholder="Enter Place Type (e.g, Restaurant, Hospital)">
+                    <input type="number" id="radius" class="radius" placeholder="Enter Radius (kilometers)">
+                    <button id="search-button" class="search-button">Search</button>
+                </div>
+                <div id="results" class="search-results"></div>
+            </div>
+        </div>
+        <div id="map" class="right-panel"></div>
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1_m55oEHB93g2jUD4vK9FdKy5xx5LRoQ&libraries=places,geocoding"></script>
+    <script src="script.js"></script>
+</body>
+</html>
