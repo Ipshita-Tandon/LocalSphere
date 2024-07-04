@@ -1,6 +1,6 @@
-# LocoSphere
+# LocalSphere
 
-Welcome to LocoSphere! Your ultimate guide to discovering and connecting with local businesses and services in your neighborhood. This website leverages the Google Maps API and Google Places API to provide users with detailed information about nearby places based on their location or a specified address.
+Welcome to LocalSphere! Your ultimate guide to discovering and connecting with local businesses and services in your neighborhood. This website leverages the Google Maps API and Google Places API to provide users with detailed information about nearby places based on their location or a specified address.
 
 ![image](https://github.com/Ipshita-Tandon/LocalSphere/assets/120296010/effefd54-817d-476d-b2ce-2006e971b24c)
 
