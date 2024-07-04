@@ -1,4 +1,4 @@
-# LocalSphere
+# LocoSphere
 
 Welcome to LocalSphere! Your ultimate guide to discovering and connecting with local businesses and services in your neighborhood. This website leverages the Google Maps API and Google Places API to provide users with detailed information about nearby places based on their location or a specified address.
 
